@@ -8,8 +8,8 @@ cam = cv.VideoCapture(0)
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 scale = 3
-fname = input()
-scl = int(input())
+fname = input("имя файла")
+scl = int(input("масштаб (натурально число)"))
 
 
 def draw_mask(fname, scl,  yl, xl):
